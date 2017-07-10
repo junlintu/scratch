@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/solitaire/solitaire",
+    "pages/makesolitaire/makesolitaire",
+    "pages/posts/posts",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f9a1bc",
+    "navigationBarTitleText": "一起来接龙",
+    "navigationBarTextStyle":"black"
+  },
+  "debug":true
+}

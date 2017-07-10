@@ -1,0 +1,15 @@
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="5000">
+        <swiper-item><image src="/images/swiper1.jpg"></image>1</swiper-item>
+        <swiper-item><image src="/images/swiper2.jpg"></image></swiper-item>
+        <swiper-item><image src="/images/swiper3.jpg"></image>3</swiper-item>
+    </swiper>
+</view>
+<view>
+    <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+<button bindtap="switch"> Switch </button>
+<button bindtap="addToFront"> Add to the front </button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+<button bindtap="addNumberToFront"> Add to the front </button>
+</view>

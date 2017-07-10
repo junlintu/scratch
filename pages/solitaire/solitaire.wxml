@@ -1,0 +1,20 @@
+<view class="solitairepage">
+<form bindsubmit="toSolitaire" bindreset="formReset">
+<view class="solitaireinfo">
+      <view class="solitaire-title">{{solitaire.title}}</view>
+      <view class="solitaire-remark">{{solitaire.description}}</view>
+      <view class="solitaire-detail">
+        <text selectable="true" wx:for="{{solitaire.content}}" wx:for-index="index" wx:for-item="solitaire_detail" wx:key="{{solitaire_detail.id}}">{{index+1}}. {{solitaire_detail.content}}\n</text>
+        
+      </view>
+      
+</view>
+<view class="tosolitaire">
+  <input class="solitaire-content" placeholder="我也来接龙" name="solitaireContent" bindconfirm="bindSolitaireContent"/>
+  <button formType="submit" class="submit-solitaire">接龙</button>
+  <button class="delete-solitaire" bindtap="deleteSolitaire">悔龙</button>
+
+  <text class="label">备注：\n1. 再次接龙将覆盖之前的接龙内容\n2. 接龙编号无需填写自动生成</text>
+</view>
+</form>
+</view>

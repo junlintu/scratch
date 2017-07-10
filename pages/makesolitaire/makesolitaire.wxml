@@ -1,0 +1,12 @@
+<view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="start-solitaire">
+        <view class="label">标题</view>
+        <input class="solitaire-title" placeholder="接龙标题，如：六一儿童节活动报名接龙" name="solitaireTitle" />
+        <view class="label">描述</view>
+        <textarea class="solitaire-remark" placeholder="接龙说明，如时间，地点，人员要求以及接龙格式示例" name="solitaireDescription"/>
+    </view>
+    <button formType="submit" class="submit-solitaire">提交</button>
+    <button formType="reset" class="reset-solitaire">清除</button>
+    </form>
+</view>

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <button bindtap="bindViewTap" class="start-solitaires">发起接龙</button>
+  </view>
+  <view class="solitaireinfo">
+      <label>我发起的接龙</label>
+      <view class="solitaire" wx:for="{{mysolitaire}}" wx:key="ms._id" wx:for-item="ms" bindtap="goSolitaire" data-solitaireId="{{ms._id}}">
+      <view class="solitaire-title">{{ms.title}}\n</view>
+      <view class="solitaire-detail" wx:for="{{ms.content}}" wx:if="{{index<2}}" wx:key="solitaire_content._id" wx:for-index="index" wx:for-item="solitaire_content" class="solitaire-detail">{{index+1}}. {{solitaire_content.content}}\n</view>
+      <view class="solitaire-detail" wx:if="{{ms.content.length>3}}">…</view>
+      </view>
+      
+      
+      <label>已参加的接龙</label>
+      <view class="solitaire" wx:for="{{solitaire}}" wx:key="ms._id" wx:for-item="s" bindtap="goSolitaire" data-solitaireId="{{s._id}}">
+      <view class="solitaire-title">{{s.title}}\n</view>
+      <view class="solitaire-detail" wx:for="{{s.content}}" wx:if="{{index<2}}" wx:key="solitaire_content._id" wx:for-index="index" wx:for-item="solitaire_content" class="solitaire-detail">{{index+1}}. {{solitaire_content.content}}\n</view>
+      <view class="solitaire-detail" wx:if="{{s.content.length>3}}">…</view>
+      </view>
+  </view>
+</view>

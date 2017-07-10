@@ -1,0 +1,63 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.start-solitaires {
+  background-color: #34a123;
+  width:600rpx;
+  color: #fff;
+  margin: 50rpx 0;
+}
+.start-solitaires:hover {
+  background-color: #1aad19;
+}
+.solitaireinfo {
+  font-size: 12px;
+  color: gray;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-bottom: 20rpx;
+}
+.solitaireinfo label {
+  font-size: 16px;
+  line-height: 30px;
+  padding-left:20rpx;
+  color:#222;
+  display: inline-block;
+  width: 100%;
+  background-color: #fefaec;
+  box-sizing: border-box;
+}
+.solitaireinfo .solitaire {
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+
+.solitaireinfo .solitaire-title {
+  font-size: 16px;
+  line-height: 30px;
+  color:#1aad19;
+  padding-left:20rpx;
+  border-bottom: 1rpx solid #fefaec;
+}
+.solitaireinfo .solitaire-detail {
+  font-size: 14px;
+  color:#8d8d8d;
+  padding-left:20px;
+}

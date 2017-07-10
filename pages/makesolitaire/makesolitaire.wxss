@@ -1,0 +1,27 @@
+/* pages/makesolitaire/makesolitaire.wxss */
+.label {
+    font-size:14px;
+    line-height:30px;
+    padding-left:20rpx;
+    color:#625772;
+    background-color:#fefaec;
+}
+.solitaire-title, .solitaire-remark {
+    background-color: #fff;
+    width:auto;
+    font-size: 14px;
+    color: #343434;
+    line-height: 16px;
+    padding: 20rpx;
+}
+.submit-solitaire, .reset-solitaire {
+    margin: 60rpx 20rpx;
+    color:#fff;
+}
+.submit-solitaire {
+    background-color:#f1cd51;
+}
+.reset-solitaire {
+    background-color: #dcedc1;
+}
+
